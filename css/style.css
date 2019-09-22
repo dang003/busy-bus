@@ -83,41 +83,20 @@ padding-top: 5%;
   width: 50%;
   height: 100%;
   border-right: 1px solid #0B2535;
-  border-bottom: 3px solid #E86055;
+/*  border-bottom: 3px solid #E86055; */
   padding-top: 4%;
 }
 
 .right-tog {
+  float: right;
+  width: 50%;
   height: 100%;
   padding-top: 4%;
- /*  border-bottom: 3px solid #E86055; */
-}
-
-.nxt {
-  text-align: left;
-  float:left;
-  padding: 0 0 3% 3%;
-}
-
-.arr {
-  text-align: right;
-    padding: 0 3% 3% 0;
-}
-
-.upc {
-  text-align: left;
-  padding: 0 0 3% 3%;
+  border-bottom: 3px solid #E86055;
 }
 
 .bus-info {
   height: 10%;
-}
-
-.Upcoming-bus{
-  background-color: #E9F4FB;
-  color: #0B2535;
-  margin-bottom: 5%;
-  height: 100%;
 }
 
 .info-button {
