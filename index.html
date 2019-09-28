@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bus Routes View</title>
+    <title>Bus Routes Arriving View</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
   </head>
   <body>
     <section class="container" id="arriving">
-      <div class="status-bar">
-        <img src="images/Status-bar.png" class="status-bar">
-      </div>
-      <div class="nav-bar">
+      <img src="images/Status-bar.png" class="status-bar">
+      <header>
           <img src="images/Back-icon.png" class="back-icon">
-          <h1 class="nav-text">Washington/State</h1>
-      </div>
+          <h1 id="nav-text">Washington/State</h1>
+      </header>
       <div class="map">
         <img src="images/Bus Stop.png" class="bus-stop">
       </div>
-      <div class="toggle">
-        <div class="left-tog">
-          <h3>Arriving</h3>
-        </div>
-        <div class="right-tog">
-          <a href="busybuslines.html" target="_self" class="nav-links"><h3>Lines</h3></a>
-        </div>
-      </div>
+      <ul class="tabs">
+        <li><a href="index.html" target="_self" class="left-tab"><h3>Arriving</h3></a></li>
+        <li><a href="busybuslines.html" target="_self" class="right-tab"><h3>Lines</h3></a></li>
+      </ul>
       <div class="nxt">
-        <h2>Next Arriving</h2>
+        <h3>Next Arriving</h3>
       </div>
       <div class="arr">
-        <h2>Arrival Time</h2>
+        <h3>Arrival Time</h3>
       </div>
-      <div class="bus-info">
-        <div class="Upcoming-bus">
-          <div class="L-text">
-            <h2>124</h2>
-            <h4>Navy Pier</h4>
-          </div>
-          <div class="R-text">
-            <h2>9:20</h2>
-            <h4>3 minutes</h4>
-          </div>
-        </div>
-        <div class="upc">
-          <h2>Upcoming</h2>
-        </div>
-        <div class="info-button">
-          <div class="L-text">
-            <h2>J14</h2>
-            <h4>103rd/Stony Island</h4>
-          </div>
-          <div class="R-text">
-            <h2>9:26</h2>
-            <h4>9 minutes</h4>
-          </div>
-        </div>
-        <div class="info-button">
-          <div class="L-text">
-            <h2>151</h2>
-            <h4>Devon/Clark</h4>
-          </div>
-          <div class="R-text">
-            <h2>9:29</h2>
-            <h4>12 minutes</h4>
-          </div>
-        </div>
-        <div class="info-button">
-          <div class="L-text">
-            <h2>60</h2>
-            <h4>Randolph/Harbor Dr</h4>
-          </div>
-          <div class="R-text">
-            <h2>9:32</h2>
-            <h4>15 minutes</h4>
-          </div>
-        </div>
-        <div class="info-button disable">
-          <div class="L-text">
-            <div class="text-indent">
-              <h2>6</h2>
-            </div>
-            <h4>Jackson Park Express</h4>
-          </div>
-          <div class="R-text">
-            <h2>9:53</h2>
-            <h4>36 minutes</h4>
-          </div>
-        </div>
+      <ul>
+        <li class="info-button" id=next>
+          <ul>
+            <li class="L-text">
+              <h2>124</h2>
+              <h4>Navy Pier</h4>
+            </li>
+            <li class="R-text">
+              <h2>9:20</h2>
+              <h4>3 minutes</h4>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="upc">
+        <h3>Upcoming</h3>
       </div>
-      <div class="bot-nav">
+      <ul>
+        <li class="info-button">
+          <ul>
+            <li class="L-text">
+              <h2>J14</h2>
+              <h4>103rd/Stony Island</h4>
+            </li>
+            <li class="R-text">
+              <h2>9:26</h2>
+              <h4>9 minutes</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="info-button">
+          <ul>
+            <li class="L-text">
+              <h2>151</h2>
+              <h4>Devon/Clark</h4>
+            </li>
+            <li class="R-text">
+              <h2>9:29</h2>
+              <h4>12 minutes</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="info-button">
+          <ul>
+            <li class="L-text">
+              <h2>60</h2>
+              <h4>Randolph/Harbor Dr</h4>
+            </li>
+            <li class="R-text">
+              <h2>9:32</h2>
+              <h4>15 minutes</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="info-button disable">
+          <ul>
+            <li class="L-text">
+              <div class="text-indent">
+                <h2>6</h2>
+              </div>
+              <h4>Jackson Park Express</h4>
+            </li>
+            <li class="R-text">
+              <h2>9:53</h2>
+              <h4>36 minutes</h4>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <footer>
         <img src="images/NavbarBOT.png">
-      </div>
+      </footer>
     </section>
   </body>
 </html>

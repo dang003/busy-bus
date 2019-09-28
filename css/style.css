@@ -2,7 +2,7 @@ body {
   background-color: #8a8a8a;
   color: #fff;
   font-size: 10px;
-  font-family: roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 360px;
   margin: 0 auto;
 }
@@ -17,20 +17,14 @@ h1 {
 
 h2 {
   font-size: 1.8em; /* 18px */
-  font-family: open sans, sans-serif;
-  font-weight: bold;
-  line-height: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.6em; /* 16px */
-  font-family: open sans, sans-serif;
-  font-weight: bold;
-}
-
-.nav-links {
-  text-decoration: none !important;
-  color: #0B2535;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 h4 {
@@ -40,20 +34,16 @@ h4 {
 
 .container {
   background-color: #0B2535;
-  display: inline-block;
 }
 
-.nav-bar {
-  padding-left: 4%;
-}
-
-.nav-text {
-padding: 5.25% 16%;
+#nav-text {
+padding: 5.25% 20%;
 }
 
 .back-icon {
 float: left;
 padding-top: 5%;
+padding-left: 4%;
 }
 
 .map {
@@ -69,99 +59,108 @@ padding-top: 5%;
   top: 20px;
 }
 
-.toggle {
+a:link {
   background-color: #E9F4FB;
   color: #0B2535;
-  height: 48px;
-  text-align: center;
+  text-decoration: none;
 }
 
-#arriving .toggle {
+a:visited {
+  background-color: #E9F4FB;
+  color: #0B2535;
+}
+
+.tabs {
+  height: 48px;
+  border-bottom: 1px solid #0B2535;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+#arriving .tabs {
   margin-bottom: 5%;
 }
 
-#lines .toggle {
-  margin-bottom: 1px;
-}
-
-.left-tog {
+.left-tab {
   float: left;
   width: 50%;
   height: 100%;
   border-right: 1px solid #0B2535;
-  padding-top: 4%;
+  padding: 4%;
+  border-bottom: 3px solid #E9F4FB;
 }
 
-#arriving .left-tog {
+#arriving .left-tab {
   border-bottom: 3px solid #E86055;
 }
 
-.right-tog {
+.right-tab {
   float: right;
   width: 50%;
   height: 100%;
-  padding-top: 4%;
+  padding: 4%;
+  border-bottom: 3px solid #E9F4FB;
 }
 
-#lines .right-tog {
+#lines .right-tab {
   border-bottom: 3px solid #E86055;
 }
 
+/*Next Arriving text*/
 .nxt {
   text-align: left;
   float:left;
-  padding: 0 0 3% 3%;
+  padding: 0 0 3% 4%;
 }
 
+/*Arrival Time text*/
 .arr {
   text-align: right;
-    padding: 0 3% 3% 0;
+    padding: 0 4% 3% 0;
 }
 
+/*Upcoming text*/
 .upc {
   text-align: left;
-  padding: 0 0 3% 3%;
+  padding: 0 0 3.5% 4%;
 }
 
-.Upcoming-bus{
-  background-color: #E9F4FB;
-  color: #0B2535;
+/*Next arriving bus info*/
+#next{
   margin-bottom: 5%;
-  height: 64px;
 }
 
+/*bus info cards*/
 .info-button {
   background-color: #E9F4FB;
   color: #0B2535;
-  margin-bottom: 1px;
+  margin-top: 1px;
   height: 64px;
 }
 
 .L-text {
-  width: 40%;
+  width: 50%;
   float: left;
-  margin: 12px 16px;
+  text-align: left;
+  padding: 14px 16px;
 }
 
 .R-text {
-  width: 30%;
-  text-align: right;
+  width: 50%;
   float: right;
-  margin: 12px 16px;
+  padding: 14px 16px;
+  text-align: right;
 }
 
+/*Unavailable bus cards*/
 .disable {
   background-color: #e5e5e5;
   color: #666;
   background-image: url("../images/error.png");
   background-repeat: no-repeat;
-  background-position: 16px 14px;
+  background-position: 14px 15px;
 }
 
 .text-indent {
-  padding-left: 22px;
-}
-
-#arriving {
-    margin-bottom: 5%;
+  padding-left: 23px;
 }
